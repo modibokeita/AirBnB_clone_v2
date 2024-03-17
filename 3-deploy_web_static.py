@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """ Creates and distributes an archive to web servers,
 using created function deploy and pack"""

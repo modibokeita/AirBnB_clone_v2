@@ -146,9 +146,8 @@ class HBNBCommand(cmd.Cmd):
                 kwargs[name] = value
 
         new_instance = HBNBCommand.classes[className]()
-        
         for attrName, attrValue in kwargs.items():
-            setattr(new_instance, attrName, attrValue) 
+            setattr(new_instance, attrName, attrValue)
 
         new_instance.save()
         print(new_instance.id)
@@ -346,6 +345,7 @@ class HBNBCommand(cmd.Cmd):
         """ Help information for the update class """
         print("Updates an object with new information")
         print("Usage: update <className> <id> <attName> <attVal>\n")
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
