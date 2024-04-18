@@ -22,7 +22,7 @@ def hbnb():
     """
     return 'HBNB!'
 
-@app.route('//c/<text>',strict_slashes=False)
+@app.route('/c/<text>',strict_slashes=False)
 def cisfun(text):
     """
      returns  “C ” followed by the value of the text variable!
